@@ -1,3 +1,6 @@
 [submodule ".vim/bundle/Smart-Tabs"]
 	path = .vim/bundle/Smart-Tabs
 	url = git://github.com/vim-scripts/Smart-Tabs.git
+[submodule ".vim/bundle/jellybeans.vim"]
+	path = .vim/bundle/jellybeans.vim
+	url = git://github.com/vim-scripts/jellybeans.vim.git
