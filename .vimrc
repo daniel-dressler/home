@@ -30,3 +30,6 @@ noremap <Home> ""
 noremap! <End> ""
 noremap <End> ""
 noremap! <Home> ""
+
+" disable cursor blinking
+:set guicursor+=a:blinkon0
