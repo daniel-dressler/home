@@ -33,3 +33,6 @@ noremap! <Home> ""
 
 " disable cursor blinking
 :set guicursor+=a:blinkon0
+
+" vimcrypt is too close to save and exit
+nnoremap :X :x
