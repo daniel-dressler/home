@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=sshfs -o idmap=user root@danieru-router:/mnt/content /danieru-server
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_CA]=danieru-server
+Name=danieru-server
+Comment[en_CA]=mount server
+Comment=mount server
+Name[ja_JP]=sshfs
