@@ -36,3 +36,6 @@ noremap! <Home> ""
 
 " vimcrypt is too close to save and exit
 nnoremap :X :x
+
+" ex mode is evil
+nnoremap Q <Nop>
