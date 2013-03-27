@@ -13,3 +13,6 @@
 [submodule "themes"]
 	path = themes
 	url = git://github.com/mikar/awesome-themes.git
+[submodule ".config/awesome/themes"]
+	path = .config/awesome/themes
+	url = git://github.com/mikar/awesome-themes.git
