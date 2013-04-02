@@ -376,4 +376,4 @@ client.add_signal("focus", function(c) c.border_color = beautiful.border_focus e
 client.add_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 -- Network applet
-awful.util.spawn_with_shell("nm-applet")>>>>>>> 100599a0a290a129725bc39eaea64b4eaf6d57ec
+awful.util.spawn_with_shell("nm-applet")
