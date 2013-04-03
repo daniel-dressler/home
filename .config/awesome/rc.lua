@@ -366,9 +366,8 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "gimp" },
       properties = { floating = true } },
-    -- Set Firefox to always map on tags number 2 of screen 1.
-    -- { rule = { class = "Firefox" },
-    --   properties = { tag = tags[1][2] } },
+    { rule = { class = "chromium-browser" },
+      properties = { tag = tags[1][1] } },
 }
 -- }}}
 
@@ -443,10 +442,10 @@ do
 	local cmds =
 	{
 		"nm-applet",
-		"chromium-brower",
+		"chromium-browser",
 		"sshfs -o idmap=user root@danieru-router:/mnt/content /danieru-server",
 	}
 	for _, i in pairs(cmds) do
-		awful.util.spawn(i)
+		awful.util.spawn_with_shell(i)
 	end
 end
