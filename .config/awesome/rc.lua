@@ -14,6 +14,12 @@ local menubar = require("menubar")
 -- Load Debian menu entries
 local debian_menu = require("debian_menu")
 
+-- obvious widgets
+--local obvious = require("obvious")
+--local obvious = require("obvious")
+--    right_layout:add(obvious.volume_alsa)
+
+
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -432,4 +438,15 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
-awful.util.spawn_with_shell("nm-applet")
+-- autostart
+do
+	local cmds =
+	{
+		"nm-applet",
+		"chromium-brower",
+		"sshfs -o idmap=user root@danieru-router:/mnt/content /danieru-server",
+	}
+	for _, i in pairs(cmds) do
+		awful.util.spawn(i)
+	end
+end
