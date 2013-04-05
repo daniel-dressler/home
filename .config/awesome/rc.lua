@@ -442,9 +442,17 @@ do
 	local cmds =
 	{
 		"nm-applet",
-		"chromium-browser",
 		"sshfs -o idmap=user root@danieru-router:/mnt/content ~/0",
 	}
+
+	local hostname = io.popen("uname -n"):read()
+	if hostname == "danieru-workstation" then
+		table.insert(cmds, "firefox")
+		table.insert(cmds, "xrandr --output DVI-1 --rotate left --mode 1680x1050 --left-of DVI-0 --output DVI-0 --mode 1920x1080")
+	else
+		table.insert(cmds, "chromium-browser")
+	end
+
 	for _, i in pairs(cmds) do
 		awful.util.spawn_with_shell(i)
 	end
