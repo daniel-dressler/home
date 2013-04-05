@@ -443,6 +443,7 @@ do
 	{
 		"nm-applet",
 		"sshfs -o idmap=user root@danieru-router:/mnt/content ~/0",
+		'xmodmap -e "keycode 66 ="',
 	}
 
 	local hostname = io.popen("uname -n"):read()
