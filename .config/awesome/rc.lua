@@ -443,7 +443,7 @@ do
 	{
 		"nm-applet",
 		"chromium-browser",
-		"sshfs -o idmap=user root@danieru-router:/mnt/content /danieru-server",
+		"sshfs -o idmap=user root@danieru-router:/mnt/content ~/0",
 	}
 	for _, i in pairs(cmds) do
 		awful.util.spawn_with_shell(i)
