@@ -347,8 +347,11 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "gimp" },
       properties = { floating = true } },
-    { rule = { class = "chromium-browser" },
-      properties = { tag = tags[1][1] } },
+    { rule = { instance = "rhythmbox" },
+      callback = function(c)
+	      			c.screen = mouse.screen
+	      			c:tags({tags[c.screen][2]})
+      end },
 }
 -- }}}
 
@@ -425,6 +428,7 @@ do
 		"~/.run_once.sh nm-applet",
 		"sshfs -o idmap=user root@danieru-router:/mnt/content ~/0",
 		'xmodmap -e "keycode 66 ="',
+		'~/.run_once.sh rhythmbox',
 	}
 
 	local hostname = io.popen("uname -n"):read()
