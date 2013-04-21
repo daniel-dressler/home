@@ -422,17 +422,17 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 do
 	local cmds =
 	{
-		"nm-applet",
+		"~/.run_once.sh nm-applet",
 		"sshfs -o idmap=user root@danieru-router:/mnt/content ~/0",
 		'xmodmap -e "keycode 66 ="',
 	}
 
 	local hostname = io.popen("uname -n"):read()
 	if hostname == "danieru-workstation" then
-		table.insert(cmds, "firefox")
+		table.insert(cmds, "~/.run_once.sh firefox")
 		table.insert(cmds, "xrandr --output DVI-1 --rotate left --mode 1680x1050 --left-of DVI-0 --output DVI-0 --mode 1920x1080")
 	else
-		table.insert(cmds, "chromium-browser")
+		table.insert(cmds, "~/.run_once.sh chromium-browser")
 	end
 
 	for _, i in pairs(cmds) do
