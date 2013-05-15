@@ -39,3 +39,7 @@ nnoremap :X :x
 
 " ex mode is evil
 nnoremap Q <Nop>
+
+" make quickfix window appear on compiler error
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
