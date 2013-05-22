@@ -16,20 +16,20 @@ nmap :W :w
 set guifont=Ubuntu\ Mono\ 12 
 
 " disable arrows
-noremap  <Up> ""
+noremap  <Up> <nop>
 noremap! <Up> <Esc>
-noremap  <Down> ""
+noremap  <Down> <nop>
 noremap! <Down> <Esc>
-noremap  <Left> ""
+noremap  <Left> <nop>
 noremap! <Left> <Esc>
-noremap  <Right> ""
+noremap  <Right> <nop>
 noremap! <Right> <Esc>
 
 " disable Home and End
-noremap <Home> ""
-noremap! <End> ""
-noremap <End> ""
-noremap! <Home> ""
+noremap <Home>  <nop>
+noremap! <End> <nop>
+noremap <End> <nop>
+noremap! <Home> <nop>
 
 " disable cursor blinking
 :set guicursor+=a:blinkon0
