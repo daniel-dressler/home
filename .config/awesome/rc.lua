@@ -417,6 +417,7 @@ do
 		"sshfs -o idmap=user root@danieru-router:/mnt/content ~/0",
 		'setxkbmap -option ctrl:nocaps',
 		'rhythmbox',
+		'~/.run_power.sh',
 	}
 
 	local hostname = io.popen("uname -n"):read()
