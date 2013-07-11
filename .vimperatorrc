@@ -1,4 +1,4 @@
-:noremap j 13j
-:noremap k 13k
+:noremap j 17j
+:noremap k 17k
 :noremap v <C-o>
 :noremap n <C-i>
