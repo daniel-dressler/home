@@ -431,4 +431,12 @@ do
 	for _, i in pairs(cmds) do
 		awful.util.spawn_with_shell("~/.run_once.sh " .. i)
 	end
+
+	local direct_cmds =
+	{
+		"unclutter",
+	}
+	for _, cmd in pairs(direct_cmds) do
+		awful.util.spawn_with_shell(cmd)
+	end
 end
