@@ -415,7 +415,6 @@ do
 	{
 		"nm-applet",
 		"sshfs -o idmap=user root@danieru-router:/mnt/content ~/0",
-		'setxkbmap -option ctrl:nocaps',
 		'rhythmbox',
 		'~/.run_power.sh',
 	}
@@ -435,6 +434,7 @@ do
 	local direct_cmds =
 	{
 		"unclutter",
+		'setxkbmap -option ctrl:nocaps',
 	}
 	for _, cmd in pairs(direct_cmds) do
 		awful.util.spawn_with_shell(cmd)
