@@ -8,9 +8,9 @@ syntax enable
 :set lines=50 columns=84
 :set noet ci pi sts=0 sw=4 ts=4
 :set textwidth=80 
-:set guioptions-=r
-:set guioptions-=b
-:set guioptions-=l
+:set guioptions-=r "remove right scrollbar
+:set guioptions-=b "remove botom scrollbar
+:set guioptions-=l "remove left scrollbar
 nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
 :imap jk <Esc>
 nmap :W :w
@@ -44,3 +44,6 @@ nnoremap Q <Nop>
 " make quickfix window appear on compiler error
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
+
+" Rust lang tradition is non-semantic spaces
+autocmd FileType hercules setlocal shiftwidth=4 sts=4 et
