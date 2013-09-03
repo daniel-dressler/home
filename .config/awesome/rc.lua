@@ -423,7 +423,6 @@ do
 		table.insert(cmds, "chromium-browser")
 	else
 		table.insert(cmds, "firefox")
-		table.insert(cmds, "xrandr --output DVI-1 --rotate left --mode 1680x1050 --left-of DVI-0 --output DVI-0 --mode 1920x1080")
 	end
 
 	for _, i in pairs(cmds) do
