@@ -196,8 +196,9 @@ root.buttons(awful.util.table.join(
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
 	-- Volume keys
-    awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn("amixer set Master 2+") end),
-    awful.key({ }, "XF86AudioLowerVolume",    function () awful.util.spawn("amixer set Master 2-") end),
+    awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn_with_shell("~/.volume.sh plus") end),
+    awful.key({ }, "XF86AudioLowerVolume",    function () awful.util.spawn_with_shell("~/.volume.sh minus") end),
+    awful.key({ }, "XF86AudioMute",    function () awful.util.spawn_with_shell("~/.volume.sh mute") end),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
