@@ -12,7 +12,7 @@ SINK_NAME=$(pactl stat | grep "alsa_output" | perl -a -n -e 'print $F[1]')
 # set max allowed volume; 0x10000 = 100%
 VOL_MAX="0x10000"
  
-STEPS="8" # 2^n
+STEPS="16" # 2^n
 VOL_STEP=$((VOL_MAX / STEPS))
  
 VOL_NOW=`pacmd dump | grep -P "^set-sink-volume $SINK_NAME\s+" | perl -p -n -e 's/.+\s(.x.+)$/$1/'`
