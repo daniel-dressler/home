@@ -199,6 +199,8 @@ globalkeys = awful.util.table.join(
     awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn_with_shell("~/.volume.sh plus") end),
     awful.key({ }, "XF86AudioLowerVolume",    function () awful.util.spawn_with_shell("~/.volume.sh minus") end),
     awful.key({ }, "XF86AudioMute",    function () awful.util.spawn_with_shell("~/.volume.sh mute") end),
+    awful.key({ "Control", }, "Right",    function () awful.util.spawn_with_shell("sleep 0.5; xdotool key XF86AudioNext") end),
+    awful.key({ "Control", }, "Left",    function () awful.util.spawn_with_shell("sleep 0.5; xdotool key XF86AudioPrev") end),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
