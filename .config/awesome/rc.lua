@@ -196,8 +196,11 @@ root.buttons(awful.util.table.join(
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
 	-- Volume keys
-    awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn("amixer set Master 2+") end),
-    awful.key({ }, "XF86AudioLowerVolume",    function () awful.util.spawn("amixer set Master 2-") end),
+    awful.key({ }, "XF86AudioRaiseVolume",    function () awful.util.spawn_with_shell("~/.volume.sh plus") end),
+    awful.key({ }, "XF86AudioLowerVolume",    function () awful.util.spawn_with_shell("~/.volume.sh minus") end),
+    awful.key({ }, "XF86AudioMute",    function () awful.util.spawn_with_shell("~/.volume.sh mute") end),
+    awful.key({ "Control", }, "Right",    function () awful.util.spawn_with_shell("sleep 0.5; xdotool key XF86AudioNext") end),
+    awful.key({ "Control", }, "Left",    function () awful.util.spawn_with_shell("sleep 0.5; xdotool key XF86AudioPrev") end),
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
@@ -423,7 +426,6 @@ do
 		table.insert(cmds, "chromium-browser")
 	else
 		table.insert(cmds, "firefox")
-		table.insert(cmds, "xrandr --output DVI-1 --rotate left --mode 1680x1050 --left-of DVI-0 --output DVI-0 --mode 1920x1080")
 	end
 
 	for _, i in pairs(cmds) do

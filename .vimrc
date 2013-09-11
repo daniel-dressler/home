@@ -1,5 +1,7 @@
 call pathogen#infect()
 filetype plugin indent on
+set smartindent
+filetype indent on
 syntax enable
 :set guioptions-=T "remove toolbar
 :set guioptions-=m "remove menubar
