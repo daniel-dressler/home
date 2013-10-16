@@ -435,7 +435,8 @@ do
 	local direct_cmds =
 	{
 		"unclutter",
-		'setxkbmap -option ctrl:nocaps',
+		'setxkbmap -option ctrl:nocaps', 
+		'./.flux/xflux -l 51.01 -g -114',
 	}
 	for _, cmd in pairs(direct_cmds) do
 		awful.util.spawn_with_shell(cmd)
