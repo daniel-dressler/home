@@ -1,11 +1,19 @@
 call pathogen#infect()
+
+" indentation
 filetype plugin indent on
 set smartindent
 filetype indent on
+
+" colors and fonts
 syntax enable
+set background=light
+colarscheme solarized
+set guifont=Ubuntu\ Mono\ 12 
+
+" remove gvim noise
 :set guioptions-=T "remove toolbar
 :set guioptions-=m "remove menubar
-:color Tomorrow-Night-Eighties
 :set number
 :set lines=50 columns=84
 :set noet ci pi sts=0 sw=4 ts=4
@@ -13,10 +21,11 @@ syntax enable
 :set guioptions-=r "remove right scrollbar
 :set guioptions-=b "remove botom scrollbar
 :set guioptions-=l "remove left scrollbar
+
+" key map
 nnoremap ,m :w <BAR> !lessc % > %:t:r.css<CR><space>
-:imap jk <Esc>
 nmap :W :w
-set guifont=Ubuntu\ Mono\ 12 
+:imap jk <Esc>
 
 " disable arrows
 noremap  <Up> <nop>
