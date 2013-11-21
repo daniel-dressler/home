@@ -7,8 +7,10 @@ filetype indent on
 
 " colors and fonts
 syntax enable
-set background=light
-colarscheme solarized
+if has('gui_running')
+	set background=light
+	colorscheme solarized
+endif
 set guifont=Ubuntu\ Mono\ 12 
 
 " remove gvim noise
