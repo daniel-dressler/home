@@ -2,6 +2,12 @@ export PATH="$HOME/.bbndk:${PATH}"
 export PATH="$HOME/.bbndk/BB10-WebWorks-SDK-Linux-Gold-master/dependencies/tools/bin:${PATH}"
 export PATH="$HOME/.bbndk/host_10_2_0_15/linux/x86/usr/bin:${PATH}"
 
+# fxos
+export CC=gcc-4.6
+export CXX=g++-4.6
+ccache --max-size 3GB > /dev/null
+export ANDROIDFS_DIR="$HOME/fxos/zte-open-sys-backup"
+
 HISTCONTROL=ignoredups:ignorespace
 shopt -s histappend
 
