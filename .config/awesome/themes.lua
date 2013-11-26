@@ -6,20 +6,20 @@ theme = {}
 
 theme.font          = "ubuntu-mono 8"
 
-theme.bg_normal     = "#d5e286"
-theme.bg_focus      = "#b6d884"
-theme.bg_urgent     = "#ff0000"
-theme.bg_minimize   = "#8fcd9e"
+theme.bg_normal     = "#232526"
+theme.bg_focus      = theme.bg_normal
+theme.bg_urgent     = "#ae81ff"
+theme.bg_minimize   = "#1b1d1e"
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#444444"
-theme.fg_focus      = "#333333"
+theme.fg_normal     = "#ffffff"
+theme.fg_focus      = "#e2db74"
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
 theme.border_width  = 1
 theme.border_normal = "#333333"
-theme.border_focus  = theme.bg_focus
+theme.border_focus  = theme.fg_focus
 theme.border_marked = "#91231c"
 
 -- There are other variable sets
