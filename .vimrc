@@ -8,8 +8,10 @@ filetype indent on
 " colors and fonts
 syntax enable
 if has('gui_running')
-	set background=light
-	colorscheme solarized
+	"set background=light
+	colorscheme molokai
+	set background=dark
+	let g:molokai_original=1
 endif
 set guifont=Ubuntu\ Mono\ 12 
 
