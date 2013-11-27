@@ -1,6 +1,8 @@
-export PATH="$HOME/.bbndk:${PATH}"
-export PATH="$HOME/.bbndk/BB10-WebWorks-SDK-Linux-Gold-master/dependencies/tools/bin:${PATH}"
-export PATH="$HOME/.bbndk/host_10_2_0_15/linux/x86/usr/bin:${PATH}"
+if [[ `hostname -s` = "danieru-workstation" ]]; then
+	export PATH="$HOME/.bbndk:${PATH}"
+	export PATH="$HOME/.bbndk/BB10-WebWorks-SDK-Linux-Gold-master/dependencies/tools/bin:${PATH}"
+	export PATH="$HOME/.bbndk/host_10_2_0_15/linux/x86/usr/bin:${PATH}"
+fi
 
 # fxos
 export CC=gcc-4.6
