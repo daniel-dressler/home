@@ -1,8 +1,13 @@
 # fxos
-export CC=gcc-4.6
-export CXX=g++-4.6
+#export CC=gcc-4.6
+#export CXX=g++-4.6
 ccache --max-size 3GB > /dev/null
 export ANDROIDFS_DIR="$HOME/fxos/zte-open-sys-backup"
+
+export GBDKDIR="$HOME/gb/gbdk/"
+
+export PATH=/usr/local/cuda-5.5/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH
 
 HISTCONTROL=ignoredups:ignorespace
 shopt -s histappend

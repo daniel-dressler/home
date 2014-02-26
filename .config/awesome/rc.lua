@@ -417,7 +417,7 @@ do
 	local cmds =
 	{
 		"nm-applet",
-		"sshfs -o idmap=user root@danieru-router:/mnt/content ~/0",
+		"sshfs -o idmap=user root@danieru-router:/tmp/mnt/sda1 ~/0",
 		'rhythmbox',
 		'~/.run_power.sh',
 	}
@@ -442,4 +442,7 @@ do
 	for _, cmd in pairs(direct_cmds) do
 		awful.util.spawn_with_shell(cmd)
 	end
+
+	-- Mining!
+    awful.util.spawn("gnome-terminal -e \"./.mine\"")
 end
