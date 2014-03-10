@@ -12,7 +12,7 @@ local naughty = require("naughty")
 local menubar = require("menubar")
 
 -- Load Debian menu entries
-local debian_menu = require("debian_menu")
+--local debian_menu = require("debian_menu")
 
 -- obvious widgets
 --local obvious = require("obvious")
@@ -417,7 +417,6 @@ do
 	local cmds =
 	{
 		"nm-applet",
-		"sshfs -o idmap=user root@danieru-router:/tmp/mnt/sda1 ~/0",
 		'rhythmbox',
 		'~/.run_power.sh',
 	}
@@ -436,6 +435,7 @@ do
 	local direct_cmds =
 	{
 		"unclutter",
+		"sshfs -o idmap=user root@danieru-router:/tmp/mnt/sda1 ~/0",
 		'setxkbmap -option ctrl:nocaps', 
 		'./.flux/xflux -l 51.01 -g -114',
 	}
@@ -444,5 +444,5 @@ do
 	end
 
 	-- Mining!
-    awful.util.spawn("gnome-terminal -e \"./.mine\"")
+    -- awful.util.spawn("gnome-terminal -e \"./.mine\"")
 end
