@@ -4,7 +4,9 @@
 ccache --max-size 3GB > /dev/null
 export ANDROIDFS_DIR="$HOME/fxos/zte-open-sys-backup"
 
-export GBDKDIR="$HOME/gb/gbdk/"
+export GBDKDIR="$HOME/retro/gbdk/"
+
+export GOPATH="$HOME/.go/"
 
 export PATH=/usr/local/cuda-5.5/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH
