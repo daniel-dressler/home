@@ -5,6 +5,7 @@ ccache --max-size 3GB > /dev/null
 export ANDROIDFS_DIR="$HOME/fxos/zte-open-sys-backup"
 
 export GBDKDIR="$HOME/retro/gbdk/"
+export MINKO_HOME="$HOME/.minko"
 
 export GOPATH="$HOME/.go/"
 
