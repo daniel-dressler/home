@@ -1,7 +1,6 @@
 # fxos
 #export CC=gcc-4.6
 #export CXX=g++-4.6
-ccache --max-size 3GB > /dev/null
 export ANDROIDFS_DIR="$HOME/fxos/zte-open-sys-backup"
 
 export GBDKDIR="$HOME/retro/gbdk/"
