@@ -418,6 +418,7 @@ do
 	{
 		"nm-applet",
 		'rhythmbox',
+		'transmission-gtk',
 		'~/.run_power.sh',
 	}
 
@@ -438,6 +439,7 @@ do
 		"sshfs -o idmap=user root@danieru-router:/tmp/mnt/sda1 ~/0",
 		'setxkbmap -option ctrl:nocaps', 
 		'./.flux/xflux -l 51.01 -g -114',
+		'/usr/bin/udisks --mount /dev/sdb1',
 	}
 	for _, cmd in pairs(direct_cmds) do
 		awful.util.spawn_with_shell(cmd)
