@@ -417,7 +417,7 @@ do
 	local cmds =
 	{
 		"nm-applet",
-		'rhythmbox',
+		'deadbeef',
 		'transmission-gtk',
 		'~/.run_power.sh',
 	}
