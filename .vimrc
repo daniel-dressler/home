@@ -20,7 +20,7 @@ set guifont=Ubuntu\ Mono\ 12
 :set guioptions-=m "remove menubar
 :set number
 :set lines=50 columns=84
-:set noet ci pi sts=0 sw=4 ts=4
+:set noet ci pi sw=8 ts=8
 :set textwidth=80 
 :set guioptions-=r "remove right scrollbar
 :set guioptions-=b "remove botom scrollbar
