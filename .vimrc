@@ -8,9 +8,7 @@ filetype indent on
 syntax enable
 if has('gui_running')
 	"set background=light
-	colorscheme molokai
-	set background=dark
-	let g:molokai_original=1
+	colorscheme autumnleaf
 endif
 set guifont=Ubuntu\ Mono\ 12 
 
