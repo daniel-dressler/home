@@ -417,7 +417,7 @@ do
 	local cmds =
 	{
 		"nm-applet",
-		'deadbeef',
+		'clementine',
 		'transmission-gtk',
 		'~/.run_power.sh',
 	}
