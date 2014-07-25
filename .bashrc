@@ -12,7 +12,7 @@ export CC=clang
 export CXX=clang++
 alias lit="python /home/danieru/llvm_stuff/llvm-lit/lit.py"
 
-export PATH=/usr/local/cuda-5.5/bin:$PATH
+export PATH=/usr/local/cuda-5.5/bin:$HOME/.cov-analysis/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH
 
 HISTCONTROL=ignoredups:ignorespace
@@ -42,3 +42,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+
+# added by travis gem
+[ -f /home/danieru/.travis/travis.sh ] && source /home/danieru/.travis/travis.sh

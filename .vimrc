@@ -2,16 +2,13 @@ call pathogen#infect()
 
 " indentation
 filetype plugin indent on
-set smartindent
 filetype indent on
 
 " colors and fonts
 syntax enable
 if has('gui_running')
 	"set background=light
-	colorscheme molokai
-	set background=dark
-	let g:molokai_original=1
+	colorscheme autumnleaf
 endif
 set guifont=Ubuntu\ Mono\ 12 
 
@@ -20,7 +17,7 @@ set guifont=Ubuntu\ Mono\ 12
 :set guioptions-=m "remove menubar
 :set number
 :set lines=50 columns=84
-:set noet ci pi sts=0 sw=4 ts=4
+:set noet pi sw=8 ts=8
 :set textwidth=80 
 :set guioptions-=r "remove right scrollbar
 :set guioptions-=b "remove botom scrollbar

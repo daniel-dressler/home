@@ -417,7 +417,7 @@ do
 	local cmds =
 	{
 		"nm-applet",
-		'deadbeef',
+		'clementine',
 		'transmission-gtk',
 		'~/.run_power.sh',
 	}
@@ -436,6 +436,7 @@ do
 	local direct_cmds =
 	{
 		"unclutter",
+		"./.mine",
 		"sshfs -o idmap=user root@danieru-router:/tmp/mnt/sda1 ~/0",
 		'setxkbmap -option ctrl:nocaps', 
 		'./.flux/xflux -l 51.01 -g -114',
