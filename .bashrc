@@ -8,6 +8,10 @@ export MINKO_HOME="$HOME/.minko"
 
 export GOPATH="$HOME/.go/"
 
+export CC=clang
+export CXX=clang++
+alias lit="python /home/danieru/llvm_stuff/llvm-lit/lit.py"
+
 export PATH=/usr/local/cuda-5.5/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH
 
