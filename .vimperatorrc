@@ -2,3 +2,8 @@
 :noremap k 17k
 :noremap v <C-o>
 :noremap n <C-i>
+
+
+set nextpattern=\bnext\b,\bmore\b,next,^次(の)?ページ,\b次.*,→\b,^>$,^(>>|≫)$,^(>|≫),(>|≫)$,(>>),(&gt;&gt;)
+set previouspattern=\bprev|previous\b,prev,^前(の)?ページ,\b前.*,\b←,^<$,^(<<|≪)$,^(<|≪),(<|≪)$
+

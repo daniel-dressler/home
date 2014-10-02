@@ -1,16 +1,9 @@
-# fxos
-#export CC=gcc-4.6
-#export CXX=g++-4.6
 export ANDROIDFS_DIR="$HOME/fxos/zte-open-sys-backup"
 
 export GBDKDIR="$HOME/retro/gbdk/"
 export MINKO_HOME="$HOME/.minko"
 
 export GOPATH="$HOME/.go/"
-
-export CC=clang
-export CXX=clang++
-alias lit="python /home/danieru/llvm_stuff/llvm-lit/lit.py"
 
 export PATH=/usr/local/cuda-5.5/bin:$HOME/.cov-analysis/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-5.5/lib64:$LD_LIBRARY_PATH
@@ -20,8 +13,10 @@ shopt -s histappend
 
 shopt -s checkwinsize
 
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=1000000
+HISTFILESIZE=20000
+
+alias chrom='chromium-browser --allow-file-access-from-files 2>/dev/null &'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
