@@ -64,17 +64,17 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 local layouts =
 {
-    awful.layout.suit.fair,
---    awful.layout.suit.fair.horizontal,
-    awful.layout.suit.tile,
---    awful.layout.suit.tile.left,
---    awful.layout.suit.tile.bottom,
---    awful.layout.suit.tile.top,
---    awful.layout.suit.spiral,
---    awful.layout.suit.spiral.dwindle,
---    awful.layout.suit.max,
---    awful.layout.suit.max.fullscreen,
---    awful.layout.suit.magnifier,
+  awful.layout.suit.tile,
+  awful.layout.suit.fair,
+  awful.layout.suit.fair.horizontal,
+  --awful.layout.suit.tile.left,
+  --awful.layout.suit.tile.bottom,
+  --awful.layout.suit.tile.top,
+  --awful.layout.suit.spiral,
+  --awful.layout.suit.spiral.dwindle,
+  --awful.layout.suit.max,
+  --awful.layout.suit.max.fullscreen,
+  --awful.layout.suit.magnifier,
     --awful.layout.suit.floating,
 }
 -- }}}
@@ -92,7 +92,7 @@ end
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ "一", "二", "三", }, s, layouts[1])
+    tags[s] = awful.tag({ "一", "二", "三", "四"}, s, layouts[1])
 end
 -- }}}
 
@@ -234,7 +234,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
-    awful.key({ modkey, "Control" }, "l", function () awful.util.spawn("gnome-screensaver-command --lock") end),
+    --awful.key({ modkey, "Control" }, "l", function () awful.util.spawn("gnome-screensaver-command --lock") end),
     awful.key({ modkey,           }, "i", function () awful.util.spawn("gnome-terminal -e \"ssh danieru.com -t tmux a\"") end),
 
     awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)    end),
@@ -439,7 +439,7 @@ do
 		"./.mine",
 		"sshfs -o idmap=user root@danieru-router:/tmp/mnt/sda1 ~/0",
 		'setxkbmap -option ctrl:nocaps', 
-		'./.flux/xflux -l 51.01 -g -114',
+		'./.flux/xflux -l 35.8 -g -139.7',
 		'/usr/bin/udisks --mount /dev/sdb1',
 	}
 	for _, cmd in pairs(direct_cmds) do
