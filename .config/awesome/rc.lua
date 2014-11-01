@@ -418,7 +418,6 @@ do
 	{
 		"nm-applet",
 		'clementine',
-		'transmission-gtk',
 		'~/.run_power.sh',
 	}
 
