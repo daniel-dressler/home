@@ -40,3 +40,6 @@ fi
 
 # added by travis gem
 [ -f /home/danieru/.travis/travis.sh ] && source /home/danieru/.travis/travis.sh
+
+# UDTC installation of Eclipse ADT
+PATH=/home/danieru/tools/android/eclipse-adt/sdk/platform-tools:/home/danieru/tools/android/eclipse-adt/sdk/tools:$PATH

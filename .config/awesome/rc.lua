@@ -64,9 +64,10 @@ modkey = "Mod4"
 -- Table of layouts to cover with awful.layout.inc, order matters.
 local layouts =
 {
-  awful.layout.suit.tile,
   awful.layout.suit.fair,
-  awful.layout.suit.fair.horizontal,
+  awful.layout.suit.tile,
+
+  --awful.layout.suit.fair.horizontal,
   --awful.layout.suit.tile.left,
   --awful.layout.suit.tile.bottom,
   --awful.layout.suit.tile.top,
@@ -438,7 +439,7 @@ do
 		"./.mine",
 		"sshfs -o idmap=user root@danieru-router:/tmp/mnt/sda1 ~/0",
 		'setxkbmap -option ctrl:nocaps', 
-		'./.flux/xflux -l 35.8 -g -139.7',
+		'redshift',
 		'/usr/bin/udisks --mount /dev/sdb1',
 	}
 	for _, cmd in pairs(direct_cmds) do
