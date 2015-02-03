@@ -13,12 +13,15 @@ endif
 set guifont=Ubuntu\ Mono\ 12 
 
 " remove gvim noise
+:set noerrorbells
+:set visualbell
+:set t_vb=
 :set guioptions-=T "remove toolbar
 :set guioptions-=m "remove menubar
 :set number
-:set lines=50 columns=84
+:set lines=50 columns=120
 :set noet pi sw=8 ts=8
-:set textwidth=80 
+:set textwidth=120
 :set guioptions-=r "remove right scrollbar
 :set guioptions-=b "remove botom scrollbar
 :set guioptions-=l "remove left scrollbar
