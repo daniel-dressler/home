@@ -9,6 +9,7 @@ syntax enable
 if has('gui_running')
 	"set background=light
 	colorscheme autumnleaf
+	set lines=50 columns=120
 endif
 set guifont=Ubuntu\ Mono\ 12 
 
@@ -19,7 +20,6 @@ set guifont=Ubuntu\ Mono\ 12
 :set guioptions-=T "remove toolbar
 :set guioptions-=m "remove menubar
 :set number
-:set lines=50 columns=120
 :set noet pi sw=8 ts=8
 :set textwidth=120
 :set guioptions-=r "remove right scrollbar
